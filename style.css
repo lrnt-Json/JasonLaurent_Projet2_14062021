@@ -11,7 +11,7 @@ body{
     height: 10%;
 }
 
-#menu{
+.menu{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -20,16 +20,16 @@ body{
     align-items: flex-end;
 }
 
-a{
+.menu a{
     color: black;
     text-decoration: none;
 }
 
-form{
+#search form{
     display: flex;
 }
 
-label{
+#search label{
     background-color: #F2F2F2;
     border: #F2F2F2 2px solid;
     border-radius: 10px 0px 0px 10px;
@@ -55,4 +55,61 @@ label{
     color:white;
     font-size: 120%;
     padding: 0.8em;
+}
+
+#filters{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#filters p{
+    margin: 0%;
+}
+
+#filters div{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+#filter div:hover{
+    background-color: #0065FC;
+}
+#filters div label{
+    border: #DEEBFF solid 2px;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+}
+#filters div input{
+    background-color:white ;
+    border: #F2F2F2 solid 2px;
+    border-left: none;
+    border-radius: 0em 2em 2em 0em;
+    margin: 0px 0px 0px 0px;
+}
+
+.eco:hover{
+    color: #0065FC;
+}
+
+.family:hover{
+    color: #0065FC;
+}
+
+.romance:hover{
+    color: #0065FC;
+}
+
+.animal:hover{
+    color: #0065FC;
+}
+
+#info{
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+}
+#info i{
+    border: #F2F2F2 solid 2px;
+    border-radius: 100%;
 }
