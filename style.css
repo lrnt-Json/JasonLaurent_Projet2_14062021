@@ -32,6 +32,7 @@ header{
     display: flex;
     height: auto;
     width: auto;
+    flex-wrap: nowrap;
 }
 
 #search label{
@@ -70,6 +71,7 @@ header{
     flex-direction: row;
     justify-content:flex-start;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 #filters p{
@@ -152,6 +154,106 @@ header{
 #info p{
     margin: 15px;
     font-size: 15px;
+}
+
+#lodgings{
+    margin: 0px 50px 50px 50px;
+    display: flex;
+    flex-direction: row;
+
+}
+#lodgings h2{
+    font-size:larger;
+    font-weight: bolder;
+    margin: 2px;
+}
+
+#lodgings p{
+    margin: 2px;
+    font-size: medium;
+}
+
+#lodgings h3{
+    font-size: medium;
+    font-weight: bolder;
+    margin: 2px;
+}
+
+#lodgings div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.lodgings{
+    background-color:#F2F2F2;
+    border: #F2F2F2 1px solid;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.popular{
+    background-color:#F2F2F2;
+    border: #F2F2F2 1px solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popular a{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+    padding: 5px;
+    background-color: white;
+    border: white 1px solid;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 100px;
+    box-shadow: 2px 2px 15px lightgrey;
+}
+
+.lodgings a{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: white 1px solid;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px lightgrey;
+}
+
+
+.lodgings img{
+    height: 20px;
+    width: 20px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.popular img{
+    height: 100px;
+    width: 110px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.star{
+    background-color: white;
+    border-radius: 20px;
+}
+#lodgings #bluestar{
+    color: #0065FC;
+}
+
+#lodgings #greystar{
+    color: #DEEBFF;
 }
 
 footer{
