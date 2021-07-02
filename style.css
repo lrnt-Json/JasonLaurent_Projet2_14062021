@@ -5,6 +5,8 @@ body{
     height: auto;
 }
 
+    /*Header*/
+
 header{
     margin: 50px 50px 0px 50px;
     display: flex;
@@ -26,6 +28,8 @@ header{
     color: black;
     text-decoration: none;
 }
+
+    /*Search*/
 
 #search form{
     margin: 0px 50px 0px 50px;
@@ -62,6 +66,8 @@ header{
     font-size: 120%;
     padding: 0.8em;
 }
+
+    /*Filters*/
 
 #filters{
     margin: 0px 50px 0px 50px;
@@ -129,6 +135,8 @@ header{
     color: #0065FC;
 }
 
+    /*Info*/
+
 #info{
     margin: 0px 50px 0px 50px;
     display: flex;
@@ -155,6 +163,8 @@ header{
     margin: 15px;
     font-size: 15px;
 }
+
+    /*Lodgings*/
 
 #lodgings{
     margin: 0px 50px 50px 50px;
@@ -255,6 +265,55 @@ header{
 #lodgings #greystar{
     color: #DEEBFF;
 }
+
+    /*Activities*/
+
+#activities{
+    margin: 0px 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#activities h2{
+        font-size:larger;
+        font-weight: bolder;
+        margin: 2px;
+}
+
+#activities h3{
+        font-size: medium;
+        font-weight: bolder;
+        margin: 2px;
+}
+
+#activities div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#activities a{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+    background-color: white;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 250px;
+    box-shadow: 2px 2px 15px lightgrey;
+}
+
+#activities img{
+        height: 200px;
+        width: 200px;
+        border-radius: 20px 20px 0px 0px;
+}
+
+    /*Footer*/
 
 footer{
     padding: 10px 50px 50px 50px;
