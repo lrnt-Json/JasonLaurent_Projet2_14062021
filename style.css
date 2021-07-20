@@ -76,11 +76,11 @@ header p{
 }
     /*Search bar*/
 
-#search{
-    margin: 30px 100px 0px 100px;
+.search{
+    margin-top: 30px;
 }
 
-#search form{
+.search form{
     display: flex;
 }
 
@@ -91,7 +91,7 @@ header p{
     font-size: 1.6em;
     padding: 0.7em 0.9em 0.7em 0.9em;
 }
-.search{
+.search_bar{
     border: none;
     border-top: #F2F2F2 2px solid;
     border-bottom: #F2F2F2 2px solid;
@@ -126,13 +126,13 @@ header p{
     justify-content:flex-start;
 }
 
-#filters p{
+#filters h2{
     font-weight: 900;
     margin-right: 40px;
     font-size: 25px;
 }
 
-.filter_div{
+.filter_form{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -249,11 +249,11 @@ header p{
     font-size: 20px;
 }
 
-#bluestar{
+.bluestar{
     color: #0065FC;
 }
 
-#greystar{
+.greystar{
     color: #DEEBFF;
 }
 
@@ -675,22 +675,26 @@ header h1{
 }
 
 header p{
-    margin: 0 25px;
+    margin: 10px 25px;
 }
 
 /*Search bar*/
 
-#search{
+.search{
     margin: 50px 25px;
 }
 
-#search form{
+.search form{
     justify-content: center;
 }
 
-.search{
+.search label{
+    font-size: 25px;
+}
+
+.search_bar{
     margin-right: -20px;
-    font-size: 20px;
+    font-size: 25px;
     padding-right: 200px;
 }
 
@@ -704,7 +708,7 @@ header p{
     border:#0065FC solid 2px;
     border-radius: 20px;
     color:white;
-    font-size: 1.6em;
+    font-size: 25px;
     padding: 0px 20px 0px 20px;
     align-items: center;
 }
@@ -836,12 +840,25 @@ header p{
 }
 
     /*Search bar*/
-.search{
+.search_bar{
     padding-right: 0;
+}
+
+.search label{
+    font-size: 20px;
+}
+
+.search_bar{
+    font-size: 20px;
+}
+
+.search_button2{
+    font-size: 20px;
+    padding: 0 16px;
 }
     /*Filters*/
 
-#filters p{
+#filters h2{
     font-size: 20px;
 }
 
