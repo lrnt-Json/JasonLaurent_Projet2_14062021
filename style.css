@@ -72,7 +72,7 @@ header h1{
 header p{
     margin: 0px;
     margin-top: 15px;
-    font-size: 21px;
+    font-size: 20px;
 }
     /*Search bar*/
 
@@ -123,10 +123,7 @@ header p{
     display: flex;
     height: auto;
     width: auto;
-    flex-direction: row;
     justify-content:flex-start;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 #filters p{
@@ -135,7 +132,13 @@ header p{
     font-size: 25px;
 }
 
-#filters div{
+.filter_div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.filterbox{
     display: flex;
     height: auto;
     width: auto;
@@ -144,16 +147,16 @@ header p{
     margin-right: 40px;
 }
 
-#filters div:hover label{
+.filterbox:hover label{
     color: white;
     background-color: #0065FC;
     border: #0065FC solid 4px;
 }
-#filters div:hover input{
+.filterbox:hover input{
     color: #0065FC;
 }
 
-#filters div label{
+.filterbox label{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -166,7 +169,7 @@ header p{
     border-radius: 100%;
     z-index: 2;
 }
-#filters div input{
+.filterbox input{
     font-size: 25px;
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
@@ -296,7 +299,7 @@ header p{
     border-radius: 20px;
     box-shadow: 2px 2px 15px lightgrey;
     justify-content: flex-end;
-    overflow: clip;
+    overflow: hidden;
 }
 
 .lodgings1{
@@ -307,7 +310,7 @@ header p{
     background-size: 308px;
     background-position-y: -32px;
     background-position-x: -15px;
-    overflow: clip;
+    overflow:hidden;
 }
 
 .lodgings2{
@@ -317,7 +320,7 @@ header p{
     background-clip: border-box;
     background-size: 300px;
     background-position-y: -30px;
-    overflow: clip;
+    overflow: hidden;
 }
 
 .lodgings3{
@@ -328,7 +331,7 @@ header p{
     background-size: 300px;
     background-position-y: -30px;
     background-position-x: -5px;
-    overflow: clip;
+    overflow: hidden;
 }
 
 .lodgings4{
@@ -339,7 +342,7 @@ header p{
     background-size: 300px;
     background-position-y: -70px;
     background-position-x: -7px;
-    overflow: clip;
+    overflow: hidden;
 }
 
 .lodgings5{
@@ -349,7 +352,7 @@ header p{
     background-clip: border-box;
     background-size: 295px;
     background-position-y: -15px;
-    overflow: clip;
+    overflow: hidden;
 }
 
 .lodgings6{
@@ -359,7 +362,7 @@ header p{
     background-clip: border-box;
     background-size: 295px;
     background-position-y: -150px;
-    overflow: clip;
+    overflow: hidden;
 }
 
     /*Most Popular Part*/
@@ -399,7 +402,7 @@ header p{
     width: 420px;
     height: 150px;
     box-shadow: 2px 2px 15px lightgrey;
-    overflow: clip;
+    overflow: hidden;
 }
 
 .popular_link{
@@ -422,7 +425,7 @@ header p{
     background-size: 240px;
     background-position-y: -5px;
     background-position-x: -45px;
-    overflow: clip;
+    overflow: hidden;
 }
 
 .popular2{
@@ -434,7 +437,7 @@ header p{
     background-size: 220px;
     background-position-y: -5px;
     background-position-x: -35px;
-    overflow: clip;
+    overflow: hidden;
 }
 
 .popular3{
@@ -446,7 +449,7 @@ header p{
     background-size: 160px;
     background-position-y: -50px;
     background-position-x: -5px;
-    overflow: clip;
+    overflow: hidden;
 }
 
     /*Activities*/
@@ -602,7 +605,7 @@ header{
     flex-direction: column;
     justify-content: unset;
     margin: 0px;
-    font-size: 20px;
+    font-size: 25px;
     background-position-x: 25px;
 }
 
@@ -618,7 +621,7 @@ display: block;
 align-self: flex-end;
 color: #0065FC;
 text-decoration: none;
-padding-top: 50px;
+margin-top: 50px;
 margin-right: 50px;
 font-weight: 900;
 }
@@ -668,11 +671,11 @@ font-weight: 900;
 }
 
 header h1{
-    margin-left: 25px;
+    margin: 50px 25px 0 25px;
 }
 
 header p{
-    margin-left: 25px;
+    margin: 0 25px;
 }
 
 /*Search bar*/
@@ -687,7 +690,7 @@ header p{
 
 .search{
     margin-right: -20px;
-    font-size: 30px;
+    font-size: 20px;
     padding-right: 200px;
 }
 
@@ -711,6 +714,7 @@ header p{
 
 #filters{
     margin: 0 25px;
+    flex-direction: column;
 }
 
     /*Info*/
@@ -736,7 +740,7 @@ header p{
     }
 
 #lodgings h4{
-    margin: 25px 0;
+    margin: 25px;
 }
 
 .lodgings h2{
@@ -800,8 +804,238 @@ footer{
     flex-direction: column;
     padding-left: 25px;
 }
+
 }
 /*End of Tablet part*/
 
-@media screen and (max-device-width: 425px){ /*Start of Mobile part*/
+@media screen and (max-width: 425px){ /*Start of Mobile part*/
+
+body{
+    justify-content: center;
+}
+
+    /*Header*/
+
+header{
+    background-position-y: 20px;
+    font-size: 20px;
+}
+
+header h1{
+    font-size: 24px;
+}
+
+header p{
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.register1{
+    margin-top: 30px;
+    margin-right: 25px;
+}
+
+    /*Search bar*/
+.search{
+    padding-right: 0;
+}
+    /*Filters*/
+
+#filters p{
+    font-size: 20px;
+}
+
+.filterbox{
+    margin-right: 0px;
+}
+
+.filterbox label{
+    font-size: 15px;
+    width: 37px;
+    height: 37px;
+}
+
+.filterbox input{
+    font-size: 15px;
+    margin-left: -20px;
+    padding-left: 30px;
+}
+
+    /*Info*/
+
+#info p{
+    font-size: 15px;
+}
+
+#info i{
+    width: 35px;
+}
+
+    /*Lodgings*/
+#lodgings h3{
+    font-size: 15px;
+    margin: 0;
+}
+
+#lodgings h4{
+    font-size: 15px;
+    width: 330px;
+}
+
+#lodgings p{
+    font-size: 15px;
+}
+
+.star{
+    font-size: 12px;
+}
+    /*Lodgings part*/
+
+.lodgings{
+    margin: 0 0 20px 0;
+    border-radius: 0;
+    background: none;
+    border: none;
+}
+
+.lodgings h2{
+    font-size: 20px;
+    width: 330px;
+}
+
+.lodgingslinks{
+    margin: 0;
+}
+.lodgings_a{
+    width: 330px;
+    height: 190px;
+}
+
+.lodgings1{
+    background-size: 350px;
+    background-position-y: -70px;
+}
+
+.lodgings2{
+    background-size: 330px;
+    background-position-y: -55px;
+}
+
+.lodgings3{
+    background-size: 330px;
+    background-position-y: -60px;
+}
+
+.lodgings4{
+    background-size: 330px;
+    background-position-y: -105px;
+}
+
+.lodgings5{
+    background-size: 330px;
+    background-position-y: -35px;
+}
+
+.lodgings6{
+    background-size: 330px;
+    background-position-y: -200px;
+}
+    /*Most popular part*/
+
+.popular{
+    margin: 20px 0;
+    border-radius: 0;
+}
+
+.popular_head{
+    width: 290px;
+    font-size: 15px;
+}
+
+.popular_a{
+    width: 330px;
+    height: 130px;
+    margin: 20px 0;
+}
+
+.popular1{
+    width: 130px;
+    height: 130px;
+}
+
+.popular2{
+    width: 130px;
+    height: 130px;
+}
+
+.popular3{
+    width: 130px;
+    height: 130px;
+}
+
+    /*Activities*/
+
+#activities h2{
+    font-size: 20px;
+    width: 340px;
+}
+
+.activity1{
+    height: 170px;
+    background-size: 350px;
+    background-position-x: 0;
+    background-position-y: -45px;
+    margin-bottom: 30px;
+}
+
+.activity2{
+    height: 170px;
+    background-size: 350px;
+    background-position-x: 0;
+    background-position-y: -190px;
+    margin-bottom: 30px;
+}
+
+.activity3{
+    height: 170px;
+    background-size: 350px;
+    background-position-x: 0;
+    background-position-y: -40px;
+    margin-bottom: 30px;
+}
+
+.activity4{
+    height: 170px;
+    background-size: 350px;
+    background-position-x: 0;
+    background-position-y: -40px;
+    margin-bottom: 30px;
+}
+
+.activity5{
+    height: 170px;
+    background-size: 350px;
+    background-position-x: 0;
+    background-position-y: -25px;
+    margin-bottom: 30px;
+}
+
+.activity6{
+    height: 170px;
+    background-size: 350px;
+    background-position-x: 0;
+    background-position-y: -55px;
+    margin-bottom: 30px;
+}
+
+    /*footer*/
+
+footer h2{
+    font-size: 20px;
+}
+
+footer a{
+    font-size: 15px;
+}
+
 }/*End of Mobile part*/
