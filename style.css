@@ -1,11 +1,15 @@
 
 /*Start of Desktop part*/
-
 body{
     font-family: 'Raleway', sans-serif;
     width : auto;
     height: auto;
     margin: 0px;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
 }
 
     /*Header*/
@@ -22,9 +26,12 @@ header{
     font-size: 20px;
 }
 
-.header{
-    align-self: flex-end;
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
+
 .menu{
     padding-top: 50px;
     display: flex;
@@ -47,7 +54,7 @@ header{
     text-decoration: none;
     border-top: solid 2px #0065FC;
     padding: 50px;
-    padding-top: 48px;
+    padding-top: 68px;
 }
 
 .activities_anchor a{
@@ -60,7 +67,7 @@ header{
 .activities_anchor a:hover{
     color: #0065FC;
     border-top: solid 2px #0065FC;
-    padding-top: 48px;
+    padding-top: 68px;
 }
 
 header h1{
@@ -206,7 +213,8 @@ header p{
     border-radius: 100px;
 }
 
-#info p{
+#info h2{
+    font-weight: normal;
     margin-left: 15px;
     font-size: 20px;
 }
@@ -304,65 +312,65 @@ header p{
 
 .lodgings1{
     height: 144px;
-    background-image: url("images/lodgings/marcus-loke-WQJvWU_HZFo-unsplash.jpg") ;
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    background-size: 308px;
-    background-position-y: -32px;
-    background-position-x: -15px;
     overflow:hidden;
+}
+
+.lodgings1 img{
+    width: 308px;
+    margin-top: -32px;
+    margin-left: -15px;
 }
 
 .lodgings2{
     height: 144px;
-    background-image: url("images/lodgings/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    background-size: 300px;
-    background-position-y: -30px;
     overflow: hidden;
+}
+
+.lodgings2 img{
+width: 300px;
+margin-top: -30px;
 }
 
 .lodgings3{
     height: 144px;
-    background-image: url("images/lodgings/reisetopia-B8WIgxA_PFU-unsplash.jpg") ;
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    background-size: 300px;
-    background-position-y: -30px;
-    background-position-x: -5px;
     overflow: hidden;
+}
+
+.lodgings3 img{
+    width: 300px;
+    margin-top: -30px;
+    margin-left: -5px;
 }
 
 .lodgings4{
     height: 144px;
-    background-image: url("images/lodgings/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    background-size: 300px;
-    background-position-y: -70px;
-    background-position-x: -7px;
     overflow: hidden;
+}
+
+.lodgings4 img{
+    width: 300px;
+    margin-top: -70px;
+    margin-left: -7px;
 }
 
 .lodgings5{
     height: 144px;
-    background-image: url("images/lodgings/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    background-size: 295px;
-    background-position-y: -15px;
     overflow: hidden;
+}
+
+.lodgings5 img{
+    width: 398px;
+    margin-top: -15px;
 }
 
 .lodgings6{
     height: 144px;
-    background-image: url("images/lodgings/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    background-size: 295px;
-    background-position-y: -150px;
     overflow: hidden;
+}
+
+.lodgings6 img{
+    width: 295px;
+    margin-top: -150px;
 }
 
     /*Most Popular Part*/
@@ -419,37 +427,37 @@ header p{
 .popular1{
     height: 150px;
     width: 150px;
-    background-image: url("images/lodgings/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    background-size: 240px;
-    background-position-y: -5px;
-    background-position-x: -45px;
     overflow: hidden;
+}
+
+.popular1 img{
+    width: 240px;
+    margin-top: -5px;
+    margin-left: -45px;
 }
 
 .popular2{
     height: 150px;
     width: 150px;
-    background-image: url("images/lodgings/aw-creative-VGs8z60yT2c-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    background-size: 220px;
-    background-position-y: -5px;
-    background-position-x: -35px;
     overflow: hidden;
+}
+
+.popular2 img{
+    width: 220px;
+    margin-top: -5px;
+    margin-left: -35px;
 }
 
 .popular3{
     height: 150px;
     width: 150px;
-    background-image: url("images/lodgings/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    background-size: 160px;
-    background-position-y: -50px;
-    background-position-x: -5px;
     overflow: hidden;
+}
+
+.popular3 img{
+    width: 160px;
+    margin-top: -50px;
+    margin-left: -5px;
 }
 
     /*Activities*/
@@ -483,10 +491,9 @@ header p{
     flex-wrap: wrap;
 }
 
-#activities a{
+.activity_a{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     color: black;
     text-decoration: none;
     background-color: white;
@@ -494,6 +501,8 @@ header p{
     flex-wrap: nowrap;
     width: 350px;
     box-shadow: 2px 2px 15px lightgrey;
+    margin-bottom: 50px;
+    overflow: hidden;
 }
 
 .activities_column{
@@ -502,63 +511,62 @@ header p{
 }
 
 .activity1{
-    background-image: url("images/activities/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    background-size: 750px;
-    background-position-x: -200px;
-    height: 500px;
-    margin-bottom: 50px;
+    height: 554px;
+    overflow: hidden;
+}
+
+.activity1 img{
+    width: 875px;
+    margin-left: -280px;
 }
 
 .activity2{
-    background-image: url("images/activities/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    background-size: 350px;
-    background-position-y: -120px;
     height: 270px;
-    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.activity2 img{
+    width: 350px;
+    margin-top: -120px;
 }
 
 .activity3{
-    background-image: url("images/activities/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    background-size: 350px;
-    background-position-y: -20px;
     height: 180px;
-    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.activity3 img{
+    width: 350px;
+    margin-top: -20px;
 }
 
 .activity4{
-    background-image: url("images/activities/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    background-size: 740px;
-    background-position-x: -195px;
-    height: 500px;
-    margin-bottom: 50px;
+    height: 554px;
+    overflow: hidden;
+}
+
+.activity4 img{
+    width: 835px;
+    margin-left: -230px;
 }
 
 .activity5{
-    background-image: url("images/activities/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    background-size: 350px;
     height: 220px;
-    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.activity5 img{
+    width: 350px;
 }
 
 .activity6{
-    background-image: url("images/activities/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    background-size: 350px;
     height: 230px;
-    margin-bottom: 50px;
+    overflow: hidden;
 }
 
+.activity6 img{
+    width: 350px;
+}
     /*Footer*/
 
 footer{
@@ -616,14 +624,21 @@ header{
     width: 100%;
 }
 
+.nav{
+    text-align: right;
+    display: block;
+}
+
 .register1{
-display: block;
-align-self: flex-end;
-color: #0065FC;
-text-decoration: none;
+display: inline-block;
 margin-top: 50px;
 margin-right: 50px;
-font-weight: 900;
+}
+
+.register1 a{
+    text-decoration: none;
+    color: #0065FC;
+    font-weight: 900;
 }
 
 .register2{
@@ -681,7 +696,7 @@ header p{
 /*Search bar*/
 
 .search{
-    margin: 50px 25px;
+    margin: 50px 10px;
 }
 
 .search form{
@@ -841,7 +856,7 @@ header p{
 
     /*Search bar*/
 .search_bar{
-    padding-right: 0;
+    padding-right: 20px;
 }
 
 .search label{
@@ -880,7 +895,7 @@ header p{
 
     /*Info*/
 
-#info p{
+#info h2{
     font-size: 15px;
 }
 
@@ -928,34 +943,34 @@ header p{
     height: 190px;
 }
 
-.lodgings1{
-    background-size: 350px;
-    background-position-y: -70px;
+.lodgings1 img{
+    width: 350px;
+    margin-top: -65px;
 }
 
-.lodgings2{
-    background-size: 330px;
-    background-position-y: -55px;
+.lodgings2 img{
+    width: 330px;
+    margin-top: -75px;
 }
 
-.lodgings3{
-    background-size: 330px;
-    background-position-y: -60px;
+.lodgings3 img{
+    width: 335px;
+    margin-top: -60px;
 }
 
-.lodgings4{
-    background-size: 330px;
-    background-position-y: -105px;
+.lodgings4 img{
+    width: 340px;
+    margin-top: -105px;
 }
 
-.lodgings5{
-    background-size: 330px;
-    background-position-y: -35px;
+.lodgings5 img{
+    width: 330px;
+    margin-top: -35px;
 }
 
-.lodgings6{
-    background-size: 330px;
-    background-position-y: -200px;
+.lodgings6 img{
+    width: 330px;
+    margin-top: -200px;
 }
     /*Most popular part*/
 
@@ -999,50 +1014,62 @@ header p{
 
 .activity1{
     height: 170px;
-    background-size: 350px;
-    background-position-x: 0;
-    background-position-y: -45px;
-    margin-bottom: 30px;
+}
+
+.activity1 img{
+    margin-left: 0;
+    margin-top: -45px;
+    width: 350px;
 }
 
 .activity2{
     height: 170px;
-    background-size: 350px;
-    background-position-x: 0;
-    background-position-y: -190px;
-    margin-bottom: 30px;
+}
+
+.activity2 img{
+    margin-left: 0;
+    margin-top: -190px;
+    width: 350px;
 }
 
 .activity3{
     height: 170px;
-    background-size: 350px;
-    background-position-x: 0;
-    background-position-y: -40px;
-    margin-bottom: 30px;
+}
+
+.activity3 img{
+    margin-left: 0;
+    margin-top: -40px;
+    width: 350px;
 }
 
 .activity4{
     height: 170px;
-    background-size: 350px;
-    background-position-x: 0;
-    background-position-y: -40px;
-    margin-bottom: 30px;
+}
+
+.activity4 img{
+    margin-left: 0;
+    margin-top: -40px;
+    width: 350px;
 }
 
 .activity5{
     height: 170px;
-    background-size: 350px;
-    background-position-x: 0;
-    background-position-y: -25px;
-    margin-bottom: 30px;
+}
+
+.activity5 img{
+    margin-left: 0;
+    margin-top: -25px;
+    width: 350px;
 }
 
 .activity6{
     height: 170px;
-    background-size: 350px;
-    background-position-x: 0;
-    background-position-y: -55px;
-    margin-bottom: 30px;
+}
+
+.activity6 img{
+    margin-left: 0;
+    margin-top: -55px;
+    width: 350px;
 }
 
     /*footer*/
@@ -1056,3 +1083,9 @@ footer a{
 }
 
 }/*End of Mobile part*/
+
+@media screen and (max-width: 375px){
+    .search_bar{
+        width: 260px;
+    }
+}
